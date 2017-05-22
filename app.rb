@@ -6,5 +6,13 @@ get "/" do
 end
 
 post "/get_three_numbers" do
-	"Booya"
+	erb :fav_nums :locals => {:name => params ['name']}
+end
+
+post "/Age" do
+	erb :get_age
+end
+
+post "/Response" do
+	erb :get_results
 end
